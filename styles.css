@@ -1,0 +1,65 @@
+body {
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+}
+
+.shapes {
+  background-color: #2128bd;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shape.shape-1 {
+  background-color: #005ffe;
+  height: 650px;
+  width: 650px;
+  margin: -325px 0 0 -325px;
+}
+
+.shape.shape-2 {
+  background-color: #ffe5e3;
+  height: 440px;
+  width: 440px;
+  margin: -220px 0 0 -220px;
+}
+
+.shape.shape-3 {
+  background-color: #ffcc57;
+  height: 270px;
+  width: 270px;
+  margin: -135px 0 0 -135px;
+}
+
+.headline {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  mix-blend-mode: screen;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headline h1 {
+  font-size: 8em;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,52 @@
+$text-color: #2128bd;
+$shapes: (
+  #005ffe: 650px,
+  #ffe5e3: 440px,
+  #ffcc57: 270px,
+);
+
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+.shapes {
+  background-color: $text-color;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+
+  @each $color, $size in $shapes {
+    &.shape-#{index($shapes, ($color $size))} {
+      background-color: $color;
+      height: $size;
+      width: $size;
+      margin: (-$size/2) 0 0 (-$size/2);
+    }
+  }
+}
+
+.headline {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  background-color: #fff;
+  mix-blend-mode: screen;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 8em;
+  }
+}
